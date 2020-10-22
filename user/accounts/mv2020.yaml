@@ -1,0 +1,11 @@
+state: enabled
+email: morganvo@outlook.com
+fullname: Morgan
+title: developer
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$/umUJPsYRkt4xPbb4bMNj.qGvpQ4WNGGX7j.YfSiMg6skwNBmllz2
