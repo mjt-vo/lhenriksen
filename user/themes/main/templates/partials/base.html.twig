@@ -32,13 +32,9 @@
   {% endblock head %}
 </head>
 <body>
-  <!-- navigation -->
-  <header>
-    <h1>Laura Henriksen</h1>
-    <nav>
-      {# to come #}
-    </nav>
-  </header>
+  {% block header %}
+    {% include 'partials/header.html.twig' %}
+  {% endblock %}
 
   {% block content %}{% endblock %}
 </body>

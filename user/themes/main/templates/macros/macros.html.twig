@@ -1,16 +1,15 @@
+{# navigation #}
 {% macro nav_loop(page) %}
   {% import _self as macros %}
   {% for p in page.children.visible %}
-    {% set active_page = (p.active or p.activeChild) ? 'active' : '' %}
-    <li>
-      <a href="{{ p.url }}" class="{{ active_page }}">
-        {{ p.menu }}
-      </a>
-      {% if p.children.visible.count > 0 %}
-      <ul>
-        {{ macros.nav_loop(p) }}
-      </ul>
-      {% endif %}
-    </li>
+    {% set current_class = p.active ? 'nav-link--current' : '' %}
+    {# home #}
+    {% if p.order == 1 %}
+      <h1>{% if not p.active %}<a href="/">{% endif %}{{ p.menu }}{% if not p.active %}</a>{% endif %}</h1>
+    {% endif %}
+    {# pages #}
+    {% if p.order > 1 %}
+      <a class="nav-link {% if p.active %}nav-link--current{% endif %}" {% if not p.active %}href="{{ p.url }}"{% endif %}>{{ p.menu }}</a>
+    {% endif %}
   {% endfor %}
 {% endmacro %}
