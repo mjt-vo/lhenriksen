@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1603407430,
-    'checksum' => 'ed42f7d7f83aa613aa8600e0e82f2f60',
+    'timestamp' => 1603407796,
+    'checksum' => '52e6beeed5214aaf2ec09608608e982e',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -23,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1602113430
+                'modified' => 1603407790
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -637,18 +637,18 @@ node_modules'
             'salt' => 'nR7PKMFEuAkBwc'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Laura Henriksen',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Laura Henriksen',
+                'email' => 'laura.henriksen@gmail.com'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Laura Henriksen’s work can be found in The Brooklyn Rail, LitHub, No, Dear, and other places. She is the author of Agata (IMP, 2017) Fluid Arrangements, a collaborative chapbook with Beka Goedde, (Planthouse Gallery, 2018) and Canadian Girlfriends (THERETHEN, 2019). She works as the Director of Learning & Community Engagement at The Poetry Project.'
             ],
             'summary' => [
                 'enabled' => true,
