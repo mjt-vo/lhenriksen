@@ -40,6 +40,20 @@ class __TwigTemplate_7d945e584ae73960a37293a36a2399abf566b9f38b3bb049dc61a56d018
     {
         // line 4
         echo "  ";
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "media", []), "images", []));
+        foreach ($context['_seq'] as $context["_key"] => $context["image"]) {
+            // line 5
+            echo "    ";
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->dump($this->env, $context, $context["image"]);
+            echo "
+  ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['image'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 7
+        echo "  ";
         echo $this->getAttribute(($context["page"] ?? null), "content", []);
         echo "
 ";
@@ -57,7 +71,7 @@ class __TwigTemplate_7d945e584ae73960a37293a36a2399abf566b9f38b3bb049dc61a56d018
 
     public function getDebugInfo()
     {
-        return array (  42 => 4,  39 => 3,  29 => 1,);
+        return array (  56 => 7,  47 => 5,  42 => 4,  39 => 3,  29 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -73,6 +87,9 @@ class __TwigTemplate_7d945e584ae73960a37293a36a2399abf566b9f38b3bb049dc61a56d018
         return new Source("{% extends 'partials/base.html.twig' %}
 
 {% block content %}
+  {% for image in page.media.images %}
+    {{ dump(image) }}
+  {% endfor %}
   {{ page.content|raw }}
 {% endblock %}
 ", "home.html.twig", "/Users/vo/Sites/lhenriksen/user/themes/main/templates/home.html.twig");

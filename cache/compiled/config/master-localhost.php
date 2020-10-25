@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1603407796,
-    'checksum' => '52e6beeed5214aaf2ec09608608e982e',
+    'timestamp' => 1603587110,
+    'checksum' => 'c004ad028624ad2ac8c679cdc149c881',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -31,7 +31,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1603407429
+                'modified' => 1603489153
             ]
         ],
         'system/config' => [
@@ -76,6 +76,10 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1602113430
+            ],
+            'plugins/imageHandler' => [
+                'file' => 'user/plugins/imageHandler/imageHandler.yaml',
+                'modified' => 1603587060
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -197,6 +201,9 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'imageHandler' => [
+                'enabled' => true
             ],
             'error' => [
                 'enabled' => true,
@@ -854,7 +861,7 @@ node_modules'
                 ]
             ],
             'debugger' => [
-                'enabled' => false,
+                'enabled' => true,
                 'shutdown' => [
                     'close_connection' => true
                 ],

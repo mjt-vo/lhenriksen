@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/vo/Sites/lhenriksen/user/config/system.yaml',
-    'modified' => 1603407429,
+    'modified' => 1603489153,
     'data' => [
         'absolute_urls' => false,
         'home' => [
@@ -44,7 +44,7 @@ return [
             'log' => true
         ],
         'debugger' => [
-            'enabled' => false,
+            'enabled' => true,
             'twig' => true,
             'shutdown' => [
                 'close_connection' => true
